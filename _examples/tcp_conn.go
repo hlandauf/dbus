@@ -5,7 +5,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/godbus/dbus/v5"
+	"gopkg.in/hlandauf/dbus.v5"
 )
 
 // In order to enable TCP connections add the following configuration

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/godbus/dbus/v5"
+import "gopkg.in/hlandauf/dbus.v5"
 
 func main() {
 	conn, err := dbus.ConnectSessionBus()

@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/godbus/dbus/v5"
-	"github.com/godbus/dbus/v5/introspect"
+	"gopkg.in/hlandauf/dbus.v5"
+	"gopkg.in/hlandauf/dbus.v5/introspect"
 )
 
 // EmitType controls how org.freedesktop.DBus.Properties.PropertiesChanged is
@@ -241,7 +241,7 @@ func (p *Properties) Introspection(iface string) []introspect.Property {
 		}
 		p.Annotations = []introspect.Annotation{
 			{
-				Name: "org.freedesktop.DBus.Property.EmitsChangedSignal",
+				Name:  "org.freedesktop.DBus.Property.EmitsChangedSignal",
 				Value: v.Emit.String(),
 			},
 		}

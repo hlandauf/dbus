@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/godbus/dbus/v5"
-	"github.com/godbus/dbus/v5/introspect"
-	"github.com/godbus/dbus/v5/prop"
+	"gopkg.in/hlandauf/dbus.v5"
+	"gopkg.in/hlandauf/dbus.v5/introspect"
+	"gopkg.in/hlandauf/dbus.v5/prop"
 )
 
 type foo string
